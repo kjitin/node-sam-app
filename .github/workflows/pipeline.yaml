@@ -41,7 +41,7 @@ jobs:
       - uses: actions/checkout@v3
       - run: |
           echo 'Running Unit tests'
-          cd node-samp-app/hello-world
+          cd hello-world
           npm install
           npm test
 
