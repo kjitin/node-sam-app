@@ -40,7 +40,10 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - run: |
-          # trigger the tests here
+          echo 'Running Unit tests'
+          cd node-samp-app/hello-world
+          npm install
+          npm test
 
   delete-feature:
     if: startsWith(github.event.ref, 'feature') && github.event_name == 'delete'
